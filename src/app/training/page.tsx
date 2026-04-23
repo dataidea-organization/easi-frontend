@@ -218,7 +218,7 @@ export default function Training() {
                         className="bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover"
                       >
                         <Link href="tel:+256772454680">
-                          Pay with Mobile Money
+                          Pay with MTN Mobile Money
                         </Link>
                       </Button>
                       <Button
