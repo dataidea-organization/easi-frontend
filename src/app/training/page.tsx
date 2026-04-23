@@ -181,7 +181,7 @@ export default function Training() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                   <div>
                     <span className="inline-block text-sm font-semibold bg-easi-orange/20 text-easi-orange border border-easi-orange rounded-full px-3 py-1 mb-4">
-                      Monday, April 27, 2026
+                      Wednesday, April 29, 2026
                     </span>
                     <h3 className={`${typography.h3} text-easi-orange mb-4`}>
                       Introduction to Data Management Using Python
@@ -191,6 +191,7 @@ export default function Training() {
                     </p>
                     <div className="space-y-2 text-gray-700">
                       <p><strong className="text-gray-900">Location:</strong> EASI Training Platform</p>
+                      <p><strong className="text-gray-900">Duration:</strong> 3 hours</p>
                       <p><strong className="text-gray-900">Registration:</strong> Payment must be completed first</p>
                     </div>
                   </div>
