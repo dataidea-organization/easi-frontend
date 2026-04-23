@@ -110,7 +110,7 @@ export default function Training() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 h-full flex items-end justify-center pb-16">
+        <div className="container mx-auto px-4 relative z-10 h-full flex items-end justify-center pb-8">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -130,23 +130,23 @@ export default function Training() {
               Build your statistical expertise with our comprehensive training programs designed 
               for professionals, researchers, and organizations across East Africa.
             </motion.p>
-            <motion.div variants={fadeInUp}>
-              <Button
-                size="lg"
-                asChild
-                className="bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover px-8 py-3 text-lg"
-              >
-                <Link href="/contact/">
-                  Enroll Now
-                </Link>
-              </Button>
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-col items-center gap-2 text-white/90"
+            >
+              <span className="text-sm md:text-base font-medium">
+                Scroll down to see upcoming trainings
+              </span>
+              <span className="text-2xl md:text-3xl leading-none" aria-hidden="true">
+                ↓
+              </span>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* Upcoming Events Section */}
-      <section className="py-24 bg-white">
+      {/* Featured Training Section */}
+      <section id="featured-training" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -159,68 +159,83 @@ export default function Training() {
               className={`${typography.h2} mb-6`}
               variants={fadeInUp}
             >
-              Upcoming Training Events
+              Featured Training
             </motion.h2>
             <motion.p 
               className="text-gray-600 max-w-2xl mx-auto"
               variants={fadeInUp}
             >
-              Explore our upcoming events and secure your spot today.
+              Register for our next intake using a clear payment-first process.
             </motion.p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'AI Training for Lecturers and Graduate Students',
-                date: 'Friday, September 12, 9AM - 5PM',
-                location: 'University of Kisubi',
-                description: 'A hands-on training for lecturers and graduate students to learn about AI and its applications in their research and teaching.'
-              },
-              {
-                title: 'Python for Data Science Bootcamp',
-                date: 'To Be Determined',
-                location: 'Online',
-                description: 'An intensive bootcamp covering Python basics, pandas, and machine learning for aspiring data scientists.'
-              },
-              {
-                title: 'Machine Learning with Python',
-                date: 'To Be Determined',
-                location: 'Online',
-                description: 'An intensive training covering machine learning algorithms and their applications, with a focus on practical implementation.'
-              }
-            ].map((training, index) => (
-              <motion.div
-                key={index}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeInUp}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 text-easi-orange">{training.title}</h3>
-                    <div className="text-gray-700 mb-1">
-                      <strong className="text-gray-900">Date:</strong> {training.date}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="max-w-5xl mx-auto"
+          >
+            <Card id="secure-your-spot" className="border-2 border-easi-orange/30 shadow-lg">
+              <CardContent className="p-8 md:p-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                  <div>
+                    <span className="inline-block text-sm font-semibold bg-easi-orange/20 text-easi-orange border border-easi-orange rounded-full px-3 py-1 mb-4">
+                      Monday, April 27, 2026
+                    </span>
+                    <h3 className={`${typography.h3} text-easi-orange mb-4`}>
+                      Introduction to Data Management Using Python
+                    </h3>
+                    <p className="text-gray-700 mb-6">
+                      Join this practical training to learn how to clean, organize, and manage datasets efficiently using Python.
+                    </p>
+                    <div className="space-y-2 text-gray-700">
+                      <p><strong className="text-gray-900">Location:</strong> EASI Training Platform</p>
+                      <p><strong className="text-gray-900">Registration:</strong> Payment must be completed first</p>
                     </div>
-                    <div className="text-gray-700 mb-1">
-                      <strong className="text-gray-900">Location:</strong> {training.location}
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-4">How to Secure Your Spot</h4>
+                    <ol className="space-y-4 text-gray-700">
+                      <li className="flex items-start gap-3">
+                        <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-easi-orange/20 border border-easi-orange text-easi-orange font-semibold text-sm">1</span>
+                        <span>Make a Mobile Money deposit to <strong>+256772454680</strong>.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-easi-orange/20 border border-easi-orange text-easi-orange font-semibold text-sm">2</span>
+                        <span>After payment is successful, open and complete the registration form.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-easi-orange/20 border border-easi-orange text-easi-orange font-semibold text-sm">3</span>
+                        <span>Enter your <strong>Transaction ID</strong> in the form to complete registration.</span>
+                      </li>
+                    </ol>
+
+                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                      <Button
+                        asChild
+                        className="bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover"
+                      >
+                        <Link href="tel:+256772454680">
+                          Pay with Mobile Money
+                        </Link>
+                      </Button>
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="bg-white/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/10"
+                      >
+                        <Link href="https://forms.gle/m3WF8qfcQVPWjNgF9" target="_blank" rel="noopener noreferrer">
+                          Complete Form After Payment
+                        </Link>
+                      </Button>
                     </div>
-                    <p className="text-gray-600 mt-2 mb-4">{training.description}</p>
-                    <Button
-                      asChild
-                      className="w-full bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover"
-                    >
-                      <Link href="/contact/">
-                        Express Interest
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </section>
 

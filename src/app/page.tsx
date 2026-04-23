@@ -211,6 +211,82 @@ export default function Home() {
         <Stats />
       </motion.div>
 
+      {/* Monthly Webinar Series Teaser */}
+      <section className="py-24 bg-gradient-to-br from-easi-dark via-easi-dark to-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="flex flex-col lg:flex-row items-center gap-12"
+          >
+            <motion.div className="lg:w-1/2" variants={fadeInUp}>
+              <div className="inline-block bg-easi-orange/20 border border-easi-orange text-easi-orange px-4 py-2 rounded-full text-sm font-medium mb-6">
+                Monthly Webinar Series
+              </div>
+              <h2 className={`${typography.h2} mb-6`}>
+                Skilling Africa for the AI Era
+              </h2>
+              <p className="text-lg text-gray-300 mb-8">
+                Join our monthly webinar series exploring how AI is transforming survey methodologies, 
+                data validation techniques, and statistical analysis across Africa. Perfect for survey 
+                methodologists, statisticians, data scientists, and policy analysts.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Button
+                  size="lg"
+                  asChild
+                  variant="outline"
+                  className="bg-easi-orange/20 text-easi-orange border-easi-orange hover:bg-easi-orange/30 px-6 py-3"
+                >
+                  <Link href="/webinars/">
+                    View All Webinars
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
+            
+            <motion.div className="lg:w-1/2" variants={fadeInUp}>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="bg-easi-orange text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Next Training
+                  </span>
+                  <span className="text-gray-400 text-sm">April 2026 Intake</span>
+                </div>
+                <h3 className={`${typography.h3} text-white mb-4`}>
+                  Introduction to Data Management Using Python
+                </h3>
+                <div className="flex flex-wrap gap-4 text-gray-300 mb-6">
+                  <div className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Monday, April 27, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Registration open now</span>
+                  </div>
+                </div>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full bg-easi-orange/20 text-easi-orange border-easi-orange hover:bg-easi-orange/30"
+                >
+                  <Link href="/training/">
+                    View Training Details
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Partners Section with Animation */}
       <motion.div
         initial="hidden"

@@ -38,6 +38,7 @@ export const navigation: NavigationItem[] = [
     ]
   },
   { name: 'Gallery', href: '/gallery', external: false },
+  { name: 'Webinars', href: '/webinars/', external: false },
   { 
     name: 'Resources', 
     href: '#', 
