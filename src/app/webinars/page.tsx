@@ -45,11 +45,11 @@ const webinarSeries = {
 // Upcoming webinar
 const upcomingWebinar = {
   number: 3,
-  title: 'Machine Learning in Statistical Analysis',
-  description: 'Discover how machine learning algorithms are revolutionizing statistical analysis and predictive modeling. Learn practical approaches to integrating ML techniques into your research workflows.',
-  date: 'February 27, 2026',
-  time: '15:00 UTC',
-  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_SSpvvC-IT--m5DxpLsZqOg'
+  title: 'Geospatial and Remote Sensing for Real-Time Data Collection',
+  description: 'Expose participants to spatial AI that complements traditional surveys.',
+  date: 'April 24, 2026',
+  time: '12:00 PM UTC',
+  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_4rdIZImVSWO_EASsUaWpvg'
 };
 
 // Past webinars

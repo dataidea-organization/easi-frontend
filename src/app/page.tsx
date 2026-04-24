@@ -251,25 +251,25 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="bg-easi-orange text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Next Training
+                    Next Webinar
                   </span>
-                  <span className="text-gray-400 text-sm">April 2026 Intake</span>
+                  <span className="text-gray-400 text-sm">Webinar 3</span>
                 </div>
                 <h3 className={`${typography.h3} text-white mb-4`}>
-                  Introduction to Data Management Using Python
+                  Geospatial and Remote Sensing for Real-Time Data Collection
                 </h3>
                 <div className="flex flex-wrap gap-4 text-gray-300 mb-6">
                   <div className="flex items-center gap-2">
                     <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span>Wednesday, April 29, 2026</span>
+                    <span>April 24, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>Registration open now</span>
+                    <span>12:00 PM UTC</span>
                   </div>
                 </div>
                 <Button
@@ -277,8 +277,8 @@ export default function Home() {
                   variant="outline"
                   className="w-full bg-easi-orange/20 text-easi-orange border-easi-orange hover:bg-easi-orange/30"
                 >
-                  <Link href="/training/">
-                    View Training Details
+                  <Link href="https://us06web.zoom.us/webinar/register/WN_4rdIZImVSWO_EASsUaWpvg" target="_blank" rel="noopener noreferrer">
+                    Register Now
                   </Link>
                 </Button>
               </div>
