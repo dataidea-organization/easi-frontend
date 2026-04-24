@@ -201,7 +201,10 @@ export default function Training() {
                     <ol className="space-y-4 text-gray-700">
                       <li className="flex items-start gap-3">
                         <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-easi-orange/20 border border-easi-orange text-easi-orange font-semibold text-sm">1</span>
-                        <span>Make a Mobile Money deposit to <strong>+256772454680</strong>.</span>
+                        <span>
+                          Make a Mobile Money deposit to <strong>Wesonga Ronald</strong> using either{' '}
+                          <strong>0749747472</strong> or <strong>0791429565</strong>.
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-easi-orange/20 border border-easi-orange text-easi-orange font-semibold text-sm">2</span>
@@ -213,14 +216,18 @@ export default function Training() {
                       </li>
                     </ol>
 
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                    <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-3">
                       <Button
                         asChild
                         className="bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover"
                       >
-                        <Link href="tel:+256772454680">
-                          Pay with MTN Mobile Money
-                        </Link>
+                        <Link href="tel:+256749747472">Pay — 0749747472</Link>
+                      </Button>
+                      <Button
+                        asChild
+                        className="bg-easi-orange/20 border-2 border-easi-orange text-easi-orange hover:bg-easi-orange/30 hover:border-easi-orange-hover"
+                      >
+                        <Link href="tel:+256791429565">Pay — 0791429565</Link>
                       </Button>
                       <Button
                         asChild
