@@ -277,7 +277,7 @@ export default function Home() {
                   variant="outline"
                   className="w-full bg-easi-orange/20 text-easi-orange border-easi-orange hover:bg-easi-orange/30"
                 >
-                  <Link href="https://us06web.zoom.us/webinar/register/WN_4rdIZImVSWO_EASsUaWpvg" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://us06web.zoom.us/webinar/register/WN_4rdIZlmVSWO_EASsUaWpvg" target="_blank" rel="noopener noreferrer">
                     Register Now
                   </Link>
                 </Button>

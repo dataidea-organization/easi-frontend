@@ -28,37 +28,29 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md">
-      {/* Thin Top Banner */}
+      {/* Thin Top Banners */}
       <section className="relative bg-orange-200 py-2 md:py-3">
-        <div className="container mx-auto px-4 ">
-          <motion.div 
+        <div className="container mx-auto px-4 space-y-2">
+          <motion.div
             className="flex flex-col md:flex-row items-center justify-between text-black"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {/* Left side - Event info */}
             <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-3 mb-2 md:mb-0">
               <span className="text-xs md:text-sm font-semibold bg-white/20 px-2 md:px-3 py-1 rounded-full border border-black">
                 Upcoming Training
               </span>
               <span className="text-xs md:text-sm font-medium text-center sm:text-left">Introduction to Data Management Using Python</span>
             </div>
-            
-            {/* Right side - Date, location, and buttons */}
+
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 md:space-x-4 text-xs md:text-sm">
-              {/* Date and location - hide on very small screens */}
               <div className="hidden sm:flex items-center space-x-3">
                 <span>Wednesday, April 29, 2026</span>
-                <span></span>
               </div>
-              
-              {/* Mobile: show only date */}
               <div className="sm:hidden">
                 <span>Wednesday, April 29, 2026</span>
               </div>
-              
-              {/* Buttons */}
               <div className="flex items-center space-x-2">
                 <Button
                   variant="outline"
@@ -68,6 +60,42 @@ const Navbar = () => {
                 >
                   <Link href="/training/#featured-training">
                     Learn More
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="flex flex-col md:flex-row items-center justify-between text-black border-t border-black/20 pt-2"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-3 mb-2 md:mb-0">
+              <span className="text-xs md:text-sm font-semibold bg-white/20 px-2 md:px-3 py-1 rounded-full border border-black">
+                Upcoming Webinar
+              </span>
+              <span className="text-xs md:text-sm font-medium text-center sm:text-left">Webinar 3: Geospatial and Remote Sensing for Real-Time Data Collection</span>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 md:space-x-4 text-xs md:text-sm">
+              <div className="hidden sm:flex items-center space-x-3">
+                <span>Friday, April 24, 2026</span>
+                <span>12:00 PM UTC</span>
+              </div>
+              <div className="sm:hidden">
+                <span>Friday, April 24, 2026 - 12:00 PM UTC</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  asChild
+                  className="bg-white/20 text-easi-orange border-easi-orange hover:bg-easi-orange/10 px-2 md:px-3 py-0.5 text-xs md:text-sm font-bold"
+                >
+                  <Link href="https://us06web.zoom.us/webinar/register/WN_4rdIZlmVSWO_EASsUaWpvg" target="_blank" rel="noopener noreferrer">
+                    Register
                   </Link>
                 </Button>
               </div>

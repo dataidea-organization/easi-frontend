@@ -49,7 +49,7 @@ const upcomingWebinar = {
   description: 'Expose participants to spatial AI that complements traditional surveys.',
   date: 'April 24, 2026',
   time: '12:00 PM UTC',
-  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_4rdIZImVSWO_EASsUaWpvg'
+  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_4rdIZlmVSWO_EASsUaWpvg'
 };
 
 // Past webinars
