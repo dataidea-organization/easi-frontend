@@ -44,16 +44,37 @@ const webinarSeries = {
 
 // Upcoming webinar
 const upcomingWebinar = {
-  number: 3,
-  title: 'Geospatial and Remote Sensing for Real-Time Data Collection',
-  description: 'Expose participants to spatial AI that complements traditional surveys.',
-  date: 'April 24, 2026',
-  time: '12:00 PM UTC',
-  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_4rdIZlmVSWO_EASsUaWpvg'
+  number: 4,
+  title: 'The Role of Small Area Estimation in AI-Enabled Statistical Systems',
+  description: 'Explore how small area estimation techniques strengthen AI-enabled statistical systems to deliver more granular and reliable insights.',
+  date: 'June 26, 2026',
+  time: '3:00 PM UTC',
+  registrationLink: 'https://us06web.zoom.us/webinar/register/WN_DtWuX0uhTjip88z5PRwXYg',
+  facilitators: [
+    {
+      name: 'Prof. Ronald Wesonga',
+      title: 'Associate Professor, Department of Statistics, College of Science, Sultan Qaboos University'
+    },
+    {
+      name: 'Dr. Fuller Bbosa',
+      title: 'Research Associate, East African Statistical Institute (EASI)'
+    },
+    {
+      name: 'Dr. Frank Namugera',
+      title: 'Research Associate, East African Statistical Institute (EASI)'
+    }
+  ]
 };
 
 // Past webinars
 const pastWebinars = [
+  {
+    number: 3,
+    title: 'Geospatial and Remote Sensing for Real-Time Data Collection',
+    description: 'Exposed participants to spatial AI that complements traditional surveys.',
+    date: 'April 24, 2026',
+    recordingLink: null // Add link when available
+  },
   {
     number: 2,
     title: 'AI-Driven Insights',
@@ -224,6 +245,24 @@ export default function Webinars() {
                     <div className="flex items-center gap-2 text-gray-700">
                       <ClockIcon className="h-5 w-5 text-easi-orange" />
                       <span className="font-medium">{upcomingWebinar.time}</span>
+                    </div>
+                  </div>
+
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <UserGroupIcon className="h-5 w-5 text-easi-orange" />
+                      <span className="font-semibold text-gray-800">Facilitators</span>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      {upcomingWebinar.facilitators.map((facilitator, index) => (
+                        <div
+                          key={index}
+                          className="bg-easi-orange/5 border border-easi-orange/20 rounded-lg p-4"
+                        >
+                          <p className="font-semibold text-gray-800">{facilitator.name}</p>
+                          <p className="text-sm text-gray-600 mt-1">{facilitator.title}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
 

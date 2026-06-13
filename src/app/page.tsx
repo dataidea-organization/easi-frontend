@@ -253,23 +253,23 @@ export default function Home() {
                   <span className="bg-easi-orange text-white px-3 py-1 rounded-full text-sm font-medium">
                     Next Webinar
                   </span>
-                  <span className="text-gray-400 text-sm">Webinar 3</span>
+                  <span className="text-gray-400 text-sm">Webinar 4</span>
                 </div>
                 <h3 className={`${typography.h3} text-white mb-4`}>
-                  Geospatial and Remote Sensing for Real-Time Data Collection
+                  The Role of Small Area Estimation in AI-Enabled Statistical Systems
                 </h3>
                 <div className="flex flex-wrap gap-4 text-gray-300 mb-6">
                   <div className="flex items-center gap-2">
                     <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span>April 24, 2026</span>
+                    <span>June 26, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <svg className="h-5 w-5 text-easi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>12:00 PM UTC</span>
+                    <span>3:00 PM UTC</span>
                   </div>
                 </div>
                 <Button
@@ -277,7 +277,7 @@ export default function Home() {
                   variant="outline"
                   className="w-full bg-easi-orange/20 text-easi-orange border-easi-orange hover:bg-easi-orange/30"
                 >
-                  <Link href="https://us06web.zoom.us/webinar/register/WN_4rdIZlmVSWO_EASsUaWpvg" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://us06web.zoom.us/webinar/register/WN_DtWuX0uhTjip88z5PRwXYg" target="_blank" rel="noopener noreferrer">
                     Register Now
                   </Link>
                 </Button>
